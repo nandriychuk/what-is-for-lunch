@@ -13,11 +13,15 @@ from flask_pymongo import PyMongo
 app = Flask(__name__)
 
 # Create the database configuration
-# app.config['MONGO_DBNAME'] ='lunch_app'
+app.config['MONGO_DBNAME'] ='lunch_app'
 app.config['MONGO_URI'] = 'mongodb://localhost:27017/lunch_app'
 
 # Connect to the database
-db = PyMongo(app)
+mongo = PyMongo(app)
+# conn = 'mongodb://localhost:27017/'
+# client = mongo.MongoClient(conn)
+# db = client.lunch_app
+
 
 # Create empty food and nutrient data dictionaries
 food_data = {}
@@ -47,17 +51,25 @@ def index():
             nutrient_data['nut_id'] = response_json['foods'][0]['food']['nutrients'][i]['nutrient_id']
             nutrient_data['unit'] = response_json['foods'][0]['food']['nutrients'][i]['unit']
             nutrient_data['value'] = response_json['foods'][0]['food']['nutrients'][i]['value']
-            # nutrients.insert(i, nutrient_data)
-            nutrients.append(nutrient_data)
-            #print(nutrient_data)
+            
+            # Add nutrient data objects to the database
+            try:
+            # insert into new collection
+                mongo.db.nutrition.insert_one( nutrient_data )
 
+            except: #pymongo.errors.DuplicateKeyError
+            # print the object and skip document because it already exists in new collection
+                print(nutrient_data)
+                continue
+            
+            #print(nutrient_data)
 
     else:
         print("didn't get response")
-    print(nutrients)
+    
     # return  jsonify(response_json) 
-    return  jsonify(nutrients)  
-    # return  jsonify(food_data)
+    # return  jsonify(nutrients)  
+    return  jsonify(food_data)
     # return  render_template("index.html")    
     
 
