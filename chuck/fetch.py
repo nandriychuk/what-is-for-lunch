@@ -6,26 +6,23 @@ import pandas as pd
 import numpy as np
 
 import requests
-import sqlalchemy
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
-from sqlalchemy import create_engine
 
 from flask import Flask, jsonify, render_template
-from flask_sqlalchemy import SQLAlchemy
+from flask_pymongo import PyMongo
 
 app = Flask(__name__)
 
-# try to get a response back from the database
-# response = requests.get('https://api.nal.usda.gov/ndb/search/?format=json&q=butter&sort=n&max=25&offset=0&api_key=DEMO_KEY ')
-# if response:
-#     print('got response')
-# else:
-#     print("didn't get response")
+# Create the database configuration
+# app.config['MONGO_DBNAME'] ='lunch_app'
+app.config['MONGO_URI'] = 'mongodb://localhost:27017/lunch_app'
+
+# Connect to the database
+db = PyMongo(app)
 
 # Create empty food and nutrient data dictionaries
 food_data = {}
 nutrient_data = {}
+nutrients = []
 
 @app.route("/")
 def index():
@@ -45,13 +42,24 @@ def index():
         food_data['food_sd'] = response_json['foods'][0]['food']['desc']['sd']
 
         # Add the nutrient data to the dictionary
-        
+        for i in range(len(response_json['foods'][0]['food']['nutrients'])):
+            nutrient_data['nut_name'] = response_json['foods'][0]['food']['nutrients'][i]['name']
+            nutrient_data['nut_id'] = response_json['foods'][0]['food']['nutrients'][i]['nutrient_id']
+            nutrient_data['unit'] = response_json['foods'][0]['food']['nutrients'][i]['unit']
+            nutrient_data['value'] = response_json['foods'][0]['food']['nutrients'][i]['value']
+            # nutrients.insert(i, nutrient_data)
+            nutrients.append(nutrient_data)
+            #print(nutrient_data)
+
 
     else:
         print("didn't get response")
-
-    return jsonify(food_data)#jsonify(response_json)     
-    #render_template("index.html")
+    print(nutrients)
+    # return  jsonify(response_json) 
+    return  jsonify(nutrients)  
+    # return  jsonify(food_data)
+    # return  render_template("index.html")    
+    
 
 
 @app.route("/names")
