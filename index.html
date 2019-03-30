@@ -4,10 +4,12 @@
   <title>Bootstrap 4 Website Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="messages.js"></script>
   <style>
     .fakeimg {
         height: 200px;
@@ -108,14 +110,21 @@
 </div>
 <!-- ------------------------------------Footer------------------------------------------------ -->
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
+  <p style="text-align: left">Brought to you by:
+  <br>Natalia
+  <br>Ed
+  <br>Wenchao
+  <br>Chuck
+  <br>Emily
+</p>
 </div>
+
 
 <!-- If we use plotly we will need these things -->
   <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+<script src="/static/js/app.js"></script>
 
 </body>
 </html>
