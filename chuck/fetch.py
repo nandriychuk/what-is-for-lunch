@@ -7,6 +7,7 @@ import numpy as np
 
 import requests
 
+
 from flask import Flask, jsonify, render_template
 from flask_pymongo import PyMongo
 
@@ -26,6 +27,7 @@ mongo = PyMongo(app)
 # Create empty food and nutrient data dictionaries
 
 
+
 @app.route("/")
 def index():
     # print("\n server recognized your request.")
@@ -33,17 +35,22 @@ def index():
     
     response = requests.get('https://api.nal.usda.gov/ndb/V2/reports?ndbno=01009&ndbno=45202763&ndbno=35193&type=f&ds=stat&format=json&api_key=IH2HeHmu6H9xEmUEgOgg9t43Is6rxH3LTz3qIIaV')
 
+
     nutrients = []
+
     if response:
         response_json = response.json()     # Turn the response to json
 
         # Add the food data to the dictionary
+
         food_data = {}
+
         food_data['food_id'] = response_json['foods'][0]['food']['desc']['ndbno']
         food_data['food_group'] = response_json['foods'][0]['food']['desc']['fg']
         food_data['food_name'] = response_json['foods'][0]['food']['desc']['name']
         food_data['food_units'] = response_json['foods'][0]['food']['desc']['ru']
         food_data['food_sd'] = response_json['foods'][0]['food']['desc']['sd']
+
 
 
         # Add the nutrient data to the dictionary
@@ -64,6 +71,7 @@ def index():
     else:
         print("didn't get response")
 
+
     mongo.db.nutrition.insert_one({'nutrients': nutrients})
     
     
@@ -72,6 +80,7 @@ def index():
     return  jsonify(nutrients)
     # return  render_template("index.html")    
     
+
 
 
 @app.route("/names")
