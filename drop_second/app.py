@@ -12,16 +12,15 @@ app = Flask(__name__)
 # Use PyMongo to establish Mongo connection
 mongo = PyMongo(app, uri="mongodb://localhost:27017/project_two")
 
-
 # Route to render index.html template using data from Mongo
 @app.route("/")
 def home():
 
     # Find one record of data from the mongo database
-    destination_data = mongo.db.data_csv.find({'id': 27481})
+    q_data = mongo.db.data_csv.find({'id': 27881})
 
     # Return template and data
-    return render_template("index.html", mars=destination_data[0]['name'])
+    return render_template("index.html")
 
 @app.route("/names")
 def names():
