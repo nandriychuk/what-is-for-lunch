@@ -37,9 +37,9 @@ def names():
 @app.route("/names/<sample>")
 def subnames(sample):
     """Return a list of sample names."""
-
+    
     # Use Pandas to perform the sql query
-    stmt = mongo.db.data_api.find({'category': sample}).distinct( "name" )
+    stmt = mongo.db.data_api.find({'category':sample}).distinct( "name" )
     
 
     # Return a list of the column names (sample names)

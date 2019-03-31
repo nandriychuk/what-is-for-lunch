@@ -1,4 +1,3 @@
-
 function init() {
   // Grab a reference to the dropdown select element
   var selector = d3.select("#selDataset");
@@ -12,21 +11,26 @@ function init() {
         .property("value", sample);
     });
 
-
+    
+    // buildMetadata(firstSample);
   });
 }
 
-function subname(sample) {
+function secdrop(sample) {
   // Grab a reference to the dropdown select element
   var selector = d3.select("#selDataset2");
-
+  // selector.option.map(i=> console.log(i));
   // Use the list of sample names to populate the select options
+  $("#selDataset2")
+  .find('option')
+  .remove()
+  .end();
   d3.json(`/names/${sample}`).then((sampleNames) => {
-    sampleNames.forEach((s) => {
+    sampleNames.forEach((sample) => {
       selector
         .append("option")
-        .text(s)
-        .property("value", s);
+        .text(sample)
+        .property("value", sample);
     });
 
 
@@ -35,10 +39,9 @@ function subname(sample) {
 
 function optionChanged(newSample) {
   // Fetch new data each time a new sample is selected
-  subname(newSample);
- 
+  console.log(newSample)
+  secdrop(newSample);
+  
 }
-
-
-// // Initialize the dashboard
-// init();
+// Initialize the dashboard
+init();
