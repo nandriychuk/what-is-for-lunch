@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <title>Bootstrap 4 Website Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -62,6 +61,7 @@
             <h5>Select Food</h5>
             <h5>Here is a dropdown</h5>
             <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            <select id="selDataset2" onchange="optionChanged(this.value)"></select>
       </div>
     </div>
     <!-- ---------------------------------Right columns----------------------------------------- -->
@@ -87,7 +87,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>John</td>
+                  <td>{{ mars}}</td>
                   <td>Doe</td>
                   <td>john@example.com</td>
                 </tr>
@@ -116,8 +116,7 @@
   <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
-
+  <script src="/static/js/app.js"></script>
 
     <div class="row">
         <div class="col-md-2">
