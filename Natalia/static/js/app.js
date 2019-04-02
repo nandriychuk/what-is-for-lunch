@@ -44,54 +44,6 @@ function optionChanged(newSample) {
   
 }
 
-// define a configuration object
-
-var settings = {
-  max_width: 500,
-  x: {
-      label: 'Protein (g)',
-      type: 'linear',
-      column: 'protein (g)'
-  },
-  y: {
-      label: 'Carbs (g)',
-      type: 'linear',
-      column: 'sodium (g)'
-  },
-  marks: [
-      {
-          type: 'circle',
-          per: ['name'],
-          tooltip: '[name]'
-      }
-  ],
-  aspect: 1.0,
-  gridlines:' xy'
-};
-
-var controls = webCharts.createControls('#controls', 
-	{	
-		location: 'top', 
-		inputs:[
-			// {type: "dropdown", option: "y.column", label: "Y Values", values: ["Mass", "Boiling point", "Melting point", "Density", "Radius"], require: true},
-      {type: "subsetter", value_col: "group", label: "Choose group"},
-      // {type: "subsetter", value_col: "Group", label: "Filter by Group"}
-		]
-	}
-);
-
-// create the chart using the configuration above
-// the chart will be rendered in the <body> element
-var myChart = webCharts.createChart('#chart', settings, controls);
-
-// pass some data to the chart's init() method
-// d3.csv is used to load data from a csv
-d3.csv('/static/data/data.csv', function(error,csv) {
-
-  myChart.init(csv);
-});
-
-
 // Initialize the dashboard
 initDashboard();
 

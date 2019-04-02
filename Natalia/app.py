@@ -23,6 +23,10 @@ def home():
     # Return template and data
     return render_template("index.html", mars=destination_data[0]['name'])
 
+@app.route('/templates/index1.html')
+def about():
+    return render_template('index1.html')
+
 @app.route("/names")
 def names():
     """Return a list of sample names."""
