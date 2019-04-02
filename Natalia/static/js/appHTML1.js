@@ -1,6 +1,7 @@
-// define a configuration object
 
-var settings = {
+//define a configuration object
+
+var settingsFC = {
   max_width: 500,
   max_height: 700,
   x: {
@@ -26,7 +27,7 @@ var settings = {
   gridlines:' xy'
 };
 
-var controls = webCharts.createControls('.firstChartHeader', 
+var controlsFC = webCharts.createControls('.firstChartHeader', 
 	{	
 		location: 'top', 
 		inputs:[
@@ -39,14 +40,134 @@ var controls = webCharts.createControls('.firstChartHeader',
 
 // create the chart using the configuration above
 // the chart will be rendered in the <body> element
-var myChart = webCharts.createChart('.firstChart', settings, controls);
+var firstChart = webCharts.createChart('.firstChart', settingsFC, controlsFC);
 
 // pass some data to the chart's init() method
 // d3.csv is used to load data from a csv
 d3.csv('/static/data/data.csv', function(error,csv) {
 
-  myChart.init(csv);
+  firstChart.init(csv);
 });
+
+///////////////////second chart////////////////////
+var settingsSC = {
+  max_width: 1000,
+  max_height: 700,
+  x: {
+      label: '',
+      type: 'ordinal',
+      column: 'category'
+  },
+  y: {
+      label: 'mean value',
+      type: 'linear',
+      column: 'value',
+      behavior: "flex"
+  },
+  marks: [
+      {
+        "arrange":"stacked",
+        "split":"nutrient",
+        "type":"bar",
+        "per":["category"],
+        "summarizeY":"mean",
+        "tooltip":"[nutrient]: $y"
+      }
+  ],
+  "color_by":"nutrient",
+  colors:['#e34a33','#fc8d59','rgb(102,194,165)',"#fecc5c",'rgb(43,131,186)'],
+  // aspect: 1.0,
+  // gridlines:' xy'
+  "legend":{
+    		"label":"",
+    		"order": ["Water", "Energy", "Protein", "Total lipid (fat)", "Carbohydrate, by difference", "Fiber, total dietary", "Sugars, total"]
+    	}
+};
+
+var controlsSC = webCharts.createControls('#secondChartHeader', 
+	{	
+		location: 'top', 
+		inputs:[
+			// {type: "dropdown", option: "y.column", label: "Y Values", values: ["Mass", "Boiling point", "Melting point", "Density", "Radius"], require: true},
+      {type: "subsetter", value_col: "nutrient", label: "Choose group"},
+      {type: "subsetter", value_col: "name", label: "Filter by Name", multiple: true},
+      {label: "", type:"radio", option: "marks[0].summarizeY", values: ["percent", "mean"], relabels: ["%", "N"]}
+      // {type: "subsetter", value_col: "Group", label: "Filter by Group"}
+		]
+	}
+);
+
+// create the chart using the configuration above
+// the chart will be rendered in the <body> element
+var secondChart = webCharts.createChart('#secondChart', settingsSC, controlsSC);
+
+// pass some data to the chart's init() method
+// d3.csv is used to load data from a csv
+d3.csv('/static/data/API.csv', function(error,csv) {
+
+  secondChart.init(csv);
+});
+
+
+///////////////////third chart//////////////////////
+var settingsTC = {
+  max_width: 1000,
+  max_height: 700,
+  x: {
+      label: '',
+      type: 'ordinal',
+      column: 'nutrient'
+  },
+  y: {
+      label: 'mean value',
+      type: 'linear',
+      column: 'value',
+      behavior: "flex"
+  },
+  marks: [
+      {
+        "arrange":"stacked",
+        "split":"category",
+        "type":"bar",
+        "per":["nutrient"],
+        "summarizeY":"mean",
+        "tooltip":"[category]: $y"
+      }
+  ],
+  "color_by":"category",
+  colors:['#e34a33','#fc8d59','rgb(102,194,165)',"#fecc5c",'rgb(43,131,186)'],
+  // aspect: 1.0,
+  // gridlines:' xy'
+  // "legend":{
+  //   		"label":"",
+  //   		"order": ["Water", "Energy", "Protein", "Total lipid (fat)", "Carbohydrate, by difference", "Fiber, total dietary", "Sugars, total"]
+  //   	}
+};
+
+var controlsTC = webCharts.createControls('#thirdChartHeader', 
+	{	
+		location: 'top', 
+		inputs:[
+			// {type: "dropdown", option: "y.column", label: "Y Values", values: ["Mass", "Boiling point", "Melting point", "Density", "Radius"], require: true},
+      // {type: "subsetter", value_col: "nutrient", label: "Choose group"},
+      {type: "subsetter", value_col: "name", label: "Filter by Name", multiple: true},
+      {label: "", type:"radio", option: "marks[0].summarizeY", values: ["percent", "mean"], relabels: ["%", "N"]}
+      // {type: "subsetter", value_col: "Group", label: "Filter by Group"}
+		]
+	}
+);
+
+// create the chart using the configuration above
+// the chart will be rendered in the <body> element
+var thirdChart = webCharts.createChart('#thirdChart', settingsTC, controlsTC);
+
+// pass some data to the chart's init() method
+// d3.csv is used to load data from a csv
+d3.csv('/static/data/API.csv', function(error,csv) {
+
+  thirdChart.init(csv);
+});
+
 
 
 ////////////////second chart///////////
