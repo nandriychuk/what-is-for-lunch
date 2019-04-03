@@ -24,8 +24,12 @@ def home():
     return render_template("index.html", mars=destination_data[0]['name'])
 
 @app.route('/templates/index1.html')
-def about():
+def index1():
     return render_template('index1.html')
+
+@app.route('/templates/index2.html')
+def index2():
+    return render_template('index2.html')
 
 @app.route("/names")
 def names():
