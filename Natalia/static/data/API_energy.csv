@@ -1,0 +1,117 @@
+_id,category,id,name,nutrient,unit,value
+5c9fc0fb14910f37d830d37c,vegetables,11011,"Asparagus, raw",Energy,kcal,20
+5c9fc0fb14910f37d830d383,vegetables,11080,"Beets, raw",Energy,kcal,43
+5c9fc0fb14910f37d830d38a,vegetables,11090,"Broccoli, raw",Energy,kcal,34
+5c9fc0fb14910f37d830d391,vegetables,11109,"Cabbage, raw",Energy,kcal,25
+5c9fc0fb14910f37d830d398,vegetables,11124,"Carrots, raw",Energy,kcal,41
+5c9fc0fb14910f37d830d39f,vegetables,11135,"Cauliflower, raw",Energy,kcal,25
+5c9fc0fb14910f37d830d3a6,vegetables,11143,"Celery, raw",Energy,kcal,14
+5c9fc0fb14910f37d830d3ad,vegetables,11205,"Cucumber, with peel, raw",Energy,kcal,15
+5c9fc0fb14910f37d830d3b4,vegetables,11210,"Eggplant, cooked, boiled, drained, without salt",Energy,kcal,35
+5c9fc0fb14910f37d830d3bb,vegetables,11238,"Mushrooms, shiitake, raw",Energy,kcal,34
+5c9fc0fb14910f37d830d3c2,vegetables,11248,"Lentils, sprouted, raw",Energy,kcal,106
+5c9fc0fb14910f37d830d3c9,vegetables,11253,"Lettuce, green leaf, raw",Energy,kcal,15
+5c9fc0fb14910f37d830d3d0,vegetables,11294,"Onions, sweet, raw",Energy,kcal,32
+5c9fc0fb14910f37d830d3d7,vegetables,11304,"Peas, green, raw",Energy,kcal,81
+5c9fc0fb14910f37d830d3de,vegetables,11333,"Peppers, sweet, green, raw",Energy,kcal,20
+5c9fc0fb14910f37d830d3e5,vegetables,11357,"Potatoes, white, flesh and skin, baked",Energy,kcal,92
+5c9fc0fb14910f37d830d3ec,vegetables,11484,"Squash, winter, acorn, cooked, boiled, mashed, without salt",Energy,kcal,34
+5c9fc0fb14910f37d830d3f3,vegetables,11695,"Tomatoes, orange, raw",Energy,kcal,16
+5c9fc0fb14910f37d830d3fa,vegetables,11932,"Beans, snap, yellow, canned, regular pack, drained solids",Energy,kcal,20
+5c9fc0fb14910f37d830d401,vegetables,11705,"Asparagus, cooked, boiled, drained, with salt",Energy,kcal,22
+5c9fc0fb14910f37d830d408,vegetables,11215,"Garlic, raw",Energy,kcal,149
+5c9fc0fb14910f37d830d40f,vegetables,11233,"Kale, raw",Energy,kcal,35
+5c9fc0fb14910f37d830d416,vegetables,11007,"Artichokes, (globe or french), raw",Energy,kcal,47
+5c9fc0fb14910f37d830d41d,grains,28319,"Bagels, whole grain white",Energy,kcal,255
+5c9fc0fb14910f37d830d424,grains,20062,Rye grain,Energy,kcal,338
+5c9fc0fb14910f37d830d42b,grains,20014,"Corn grain, yellow",Energy,kcal,365
+5c9fc0fb14910f37d830d432,grains,20016,"Corn flour, whole-grain, yellow",Energy,kcal,361
+5c9fc0fb14910f37d830d439,grains,20044,"Rice, white, long-grain, regular, raw, enriched",Energy,kcal,365
+5c9fc0fb14910f37d830d440,grains,20135,"Pasta, whole grain, 51% whole wheat, remaining unenriched semolina, dry",Energy,kcal,362
+5c9fc0fb14910f37d830d447,grains,20649,"Wheat flour, whole-grain, soft wheat",Energy,kcal,332
+5c9fc0fb14910f37d830d44e,grains,20091,"Pasta, gluten-free, corn, dry",Energy,kcal,357
+5c9fc0fb14910f37d830d455,grains,20657,"Pasta, gluten-free, corn and rice flour, cooked",Energy,kcal,179
+5c9fc0fb14910f37d830d45c,grains,20120,"Pasta, dry, enriched",Energy,kcal,371
+5c9fc0fb14910f37d830d463,grains,12147,"Nuts, pine nuts, dried",Energy,kcal,673
+5c9fc0fb14910f37d830d46a,grains,12586,"Nuts, cashew nuts, oil roasted, with salt added",Energy,kcal,581
+5c9fc0fb14910f37d830d471,grains,12104,"Nuts, coconut meat, raw",Energy,kcal,354
+5c9fc0fb14910f37d830d478,grains,12155,"Nuts, walnuts, english",Energy,kcal,654
+5c9fc0fb14910f37d830d47f,grains,12063,"Nuts, almonds, dry roasted, without salt added",Energy,kcal,598
+5c9fc0fb14910f37d830d486,grains,20648,"Sorghum flour, whole-grain",Energy,kcal,359
+5c9fc0fb14910f37d830d48d,grains,18017,"Biscuits, mixed grain, refrigerated dough",Energy,kcal,263
+5c9fc0fb14910f37d830d494,grains,18260,"Muffins, English, mixed-grain (includes granola)",Energy,kcal,235
+5c9fc0fb14910f37d830d49b,grains,18351,"Rolls, hamburger or hotdog, mixed-grain",Energy,kcal,263
+5c9fc0fb14910f37d830d4a2,grains,21611,"School Lunch, chicken nuggets, whole grain breaded",Energy,kcal,270
+5c9fc0fb14910f37d830d4a9,grains,42265,"Cereals ready-to-eat, POST, GREAT GRAINS, Raisin, Date & Pecan",Energy,kcal,378
+5c9fc0fb14910f37d830d4b0,grains,42261,"Cereals ready-to-eat, POST, GREAT GRAINS Crunchy Pecan Cereal",Energy,kcal,403
+5c9fc0fb14910f37d830d4b7,grains,28326,"Crackers, whole grain, sandwich-type, with peanut butter filling",Energy,kcal,465
+5c9fc0fb14910f37d830d4be,grains,20036,"Rice, brown, long-grain, raw (Includes foods for USDA's Food Distribution Program)",Energy,kcal,367
+5c9fc0fb14910f37d830d4c5,dairy,1004,"Cheese, blue",Energy,kcal,353
+5c9fc0fb14910f37d830d4cc,dairy,1040,"Cheese, swiss",Energy,kcal,393
+5c9fc0fb14910f37d830d4d3,dairy,1132,"Egg, whole, cooked, scrambled",Energy,kcal,149
+5c9fc0fb14910f37d830d4da,dairy,1001,"Butter, salted",Energy,kcal,717
+5c9fc0fb14910f37d830d4e1,dairy,1009,"Cheese, cheddar (Includes foods for USDA's Food Distribution Program)",Energy,kcal,403
+5c9fc0fb14910f37d830d4e8,dairy,1053,"Cream, fluid, heavy whipping",Energy,kcal,340
+5c9fc0fb14910f37d830d4ef,dairy,1082,"Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D",Energy,kcal,42
+5c9fc0fb14910f37d830d4f6,dairy,1117,"Yogurt, plain, low fat",Energy,kcal,63
+5c9fc0fb14910f37d830d4fd,dairy,1287,"Yogurt, Greek, plain, lowfat",Energy,kcal,73
+5c9fc0fb14910f37d830d504,dairy,1323,"Butter, Clarified butter (ghee)",Energy,kcal,900
+5c9fc0fb14910f37d830d50b,dairy,1229,"Cheese, white, queso blanco",Energy,kcal,310
+5c9fc0fb14910f37d830d512,dairy,1145,"Butter, without salt",Energy,kcal,717
+5c9fc0fb14910f37d830d519,dairy,1159,"Cheese, goat, soft type",Energy,kcal,264
+5c9fc0fb14910f37d830d520,dairy,1057,Eggnog,Energy,kcal,88
+5c9fc0fb14910f37d830d527,dairy,1077,"Milk, whole, 3.25% milkfat, with added vitamin D",Energy,kcal,61
+5c9fc0fb14910f37d830d52e,dairy,1032,"Cheese, parmesan, grated",Energy,kcal,420
+5c9fc0fb14910f37d830d535,dairy,1012,"Cheese, cottage, creamed, large or small curd",Energy,kcal,98
+5c9fc0fb14910f37d830d53c,dairy,1015,"Cheese, cottage, lowfat, 2% milkfat",Energy,kcal,81
+5c9fc0fb14910f37d830d543,dairy,1017,"Cheese, cream",Energy,kcal,350
+5c9fc0fb14910f37d830d54a,dairy,1019,"Cheese, feta",Energy,kcal,265
+5c9fc0fb14910f37d830d551,dairy,1026,"Cheese, mozzarella, whole milk",Energy,kcal,299
+5c9fc0fb14910f37d830d558,dairy,1056,"Cream, sour, cultured",Energy,kcal,198
+5c9fc0fb14910f37d830d55f,dairy,1107,"Milk, human, mature, fluid",Energy,kcal,70
+5c9fc0fb14910f37d830d566,dairy,1252,"Cheese product, pasteurized process, American, vitamin D fortified",Energy,kcal,307
+5c9fc0fb14910f37d830d56d,dairy,1293,"Yogurt, Greek, plain, whole milk",Energy,kcal,97
+5c9fc0fb14910f37d830d574,meats,13346,"Beef, cured, corned beef, brisket, raw",Energy,kcal,198
+5c9fc0fb14910f37d830d57b,meats,22908,"Beef, corned beef hash, with potato, canned",Energy,kcal,164
+5c9fc0fb14910f37d830d582,meats,7073,"Sandwich spread, pork, beef",Energy,kcal,235
+5c9fc0fb14910f37d830d589,meats,19002,"Snacks, beef jerky, chopped and formed",Energy,kcal,410
+5c9fc0fb14910f37d830d590,meats,7007,"Bologna, beef",Energy,kcal,299
+5c9fc0fb14910f37d830d597,meats,23090,"Beef, chuck for stew, separable lean and fat, all grades, cooked, braised",Energy,kcal,191
+5c9fc0fb14910f37d830d59e,meats,13330,"Beef, variety meats and by-products, mechanically separated beef, raw",Energy,kcal,276
+5c9fc0fb14910f37d830d5a5,meats,13317,"Beef, ground, patties, frozen, cooked, broiled",Energy,kcal,295
+5c9fc0fb14910f37d830d5ac,meats,7068,"Salami, cooked, beef",Energy,kcal,261
+5c9fc0fb14910f37d830d5b3,meats,7921,Bacon and beef sticks,Energy,kcal,517
+5c9fc0fb14910f37d830d5ba,meats,13926,"Beef, tenderloin, separable lean and fat, trimmed to 1/8"" fat, prime, raw",Energy,kcal,274
+5c9fc0fb14910f37d830d5c1,meats,23136,"Beef, chuck eye Country-Style ribs, boneless, separable lean and fat, trimmed to 0"" fat, select, cooked, braised",Energy,kcal,285
+5c9fc0fb14910f37d830d5c8,meats,13148,"Beef, rib, shortribs, separable lean and fat, choice, cooked, braised",Energy,kcal,471
+5c9fc0fb14910f37d830d5cf,meats,7033,Ham and cheese spread,Energy,kcal,245
+5c9fc0fb14910f37d830d5d6,meats,10153,"Pork, cured, ham, whole, separable lean only, roasted",Energy,kcal,157
+5c9fc0fb14910f37d830d5dd,meats,10870,"Pork, cured, ham and water product, slice, boneless, separable lean only, heated, pan-broil",Energy,kcal,123
+5c9fc0fb14910f37d830d5e4,meats,15085,"Fish, salmon, sockeye, raw",Energy,kcal,131
+5c9fc0fb14910f37d830d5eb,meats,15084,"Fish, salmon, pink, canned, total can contents",Energy,kcal,129
+5c9fc0fb14910f37d830d5f2,meats,15266,"Fish, pollock, Alaska, raw",Energy,kcal,76
+5c9fc0fb14910f37d830d5f9,meats,15128,"Fish, tuna salad",Energy,kcal,187
+5c9fc0fb14910f37d830d600,meats,35157,"Fish, salmon, red, canned, bones removed (Alaska Native)",Energy,kcal,161
+5c9fc0fb14910f37d830d607,meats,15005,"Fish, bluefish, raw",Energy,kcal,124
+5c9fc0fb14910f37d830d60e,meats,15009,"Fish, carp, cooked, dry heat",Energy,kcal,162
+5c9fc0fb14910f37d830d615,meats,15017,"Fish, cod, Atlantic, canned, solids and liquid",Energy,kcal,105
+5c9fc0fb14910f37d830d61c,meats,15040,"Fish, herring, Atlantic, cooked, dry heat",Energy,kcal,203
+5c9fc0fb14910f37d830d623,fruit,9003,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",Energy,kcal,52
+5c9fc0fb14910f37d830d62a,fruit,9252,"Pears, raw",Energy,kcal,57
+5c9fc0fb14910f37d830d631,fruit,9236,"Peaches, yellow, raw",Energy,kcal,39
+5c9fc0fb14910f37d830d638,fruit,9226,"Papayas, raw",Energy,kcal,43
+5c9fc0fb14910f37d830d63f,fruit,9050,"Blueberries, raw",Energy,kcal,57
+5c9fc0fb14910f37d830d646,fruit,9316,"Strawberries, raw",Energy,kcal,32
+5c9fc0fb14910f37d830d64d,fruit,9040,"Bananas, raw",Energy,kcal,89
+5c9fc0fb14910f37d830d654,fruit,9148,"Kiwifruit, green, raw",Energy,kcal,61
+5c9fc0fb14910f37d830d65b,fruit,9200,"Oranges, raw, all commercial varieties",Energy,kcal,47
+5c9fc0fb14910f37d830d662,fruit,9037,"Avocados, raw, all commercial varieties",Energy,kcal,160
+5c9fc0fb14910f37d830d669,fruit,9111,"Grapefruit, raw, pink and red and white, all areas",Energy,kcal,32
+5c9fc0fb14910f37d830d670,fruit,9131,"Grapes, american type (slip skin), raw",Energy,kcal,67
+5c9fc0fb14910f37d830d677,fruit,9070,"Cherries, sweet, raw",Energy,kcal,63
+5c9fc0fb14910f37d830d67e,fruit,9150,"Lemons, raw, without peel",Energy,kcal,29
+5c9fc0fb14910f37d830d685,fruit,9176,"Mangos, raw",Energy,kcal,60
+5c9fc0fb14910f37d830d68c,fruit,9159,"Limes, raw",Energy,kcal,30
+5c9fc0fb14910f37d830d693,fruit,9279,"Plums, raw",Energy,kcal,46
+5c9fc0fb14910f37d830d69a,fruit,9326,"Watermelon, raw",Energy,kcal,30
+5c9fc0fb14910f37d830d6a1,fruit,9302,"Raspberries, raw",Energy,kcal,52
