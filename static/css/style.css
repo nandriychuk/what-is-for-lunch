@@ -1,0 +1,44 @@
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+    }
+.jumbotron {
+  /* image source https://www.pexels.com/ */
+    background-image: url("https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: 100%;
+    }
+#bubble {
+    display: inline-block;
+}
+#bubble2 {
+    height: 100px;
+    width: 100px;
+}
+#panel {
+    display: inline-block;
+}
+.container {
+    margin-top: 30px;
+}
+.svg-container {
+    height: 120px;
+    width: 120px;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+}
+.item2 {
+    margin-top: 30px;
+}
+.clearfix {
+overflow: auto;
+}
+.ui-front {
+    background: white;
+ }
